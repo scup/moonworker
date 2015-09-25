@@ -1,0 +1,25 @@
+{
+  "name": "moonworker",
+  "version": "0.0.1",
+  "description": "MoonWorker - Task Runner",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scup/moonworker.git"
+  },
+  "keywords": [
+    "worker",
+    "runner",
+    "cron",
+    "jobs"
+  ],
+  "author": "Guilherme (Coder)",
+  "bugs": {
+    "url": "https://github.com/scup/moonworker/issues"
+  },
+  "homepage": "https://github.com/scup/moonworker#readme"
+}
