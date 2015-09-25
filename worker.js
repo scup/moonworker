@@ -1,1 +1,1 @@
-module.exports = require('src/worker')
+module.exports = require('./src/Worker')

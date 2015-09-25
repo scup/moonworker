@@ -1,6 +1,8 @@
 'use strict';
 
-function Worker(){
+var Job = require('./Job')
+
+var Worker = function(){
 	return this.constructor.apply(this,arguments)
 };
 
@@ -30,8 +32,8 @@ Worker.prototype.constructor = function(params){
 	}
 };
 
-Worker.prototype.argumentsToArray = function(arguments){
-	returnArray = [];
+Worker.prototype.argumentsToArray = function(){
+	var returnArray = [];
 	for(var arg in arguments){
 		returnArray.push(arguments[arg])
 	}
@@ -84,3 +86,6 @@ Worker.prototype.next = function(job){
 Worker.prototype.stop = function() {
 	this.stopped = true;
 };
+
+
+module.exports = Worker

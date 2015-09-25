@@ -21,4 +21,4 @@ Job.prototype.next = function(){
 };
 
 
-module.exports = Worker;
+module.exports = Job;
