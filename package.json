@@ -1,6 +1,6 @@
 {
   "name": "moonworker",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "MoonWorker - Task Runner",
   "main": "worker.js",
   "scripts": {
@@ -17,9 +17,35 @@
     "cron",
     "jobs"
   ],
-  "author": "Guilherme (Coder)",
+  "author": {
+    "name": "Guilherme",
+    "url": "Coder"
+  },
   "bugs": {
     "url": "https://github.com/scup/moonworker/issues"
   },
-  "homepage": "https://github.com/scup/moonworker#readme"
+  "homepage": "https://github.com/scup/moonworker#readme",
+  "gitHead": "849904fd9b1e4a1e7c3650f33f48088b1490e5ca",
+  "_id": "moonworker@0.0.4",
+  "_shasum": "4d8a079225c40d06963b3cd22095b0e4850d496d",
+  "_from": "moonworker@*",
+  "_npmVersion": "2.14.2",
+  "_nodeVersion": "4.0.0",
+  "_npmUser": {
+    "name": "guisouza",
+    "email": "gui_souza@me.com"
+  },
+  "dist": {
+    "shasum": "cc0c548769f24e9519fa26cc8880025935f89e34",
+    "tarball": "http://registry.npmjs.org/moonworker/-/moonworker-0.0.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "guisouza",
+      "email": "gui_souza@me.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/moonworker/-/moonworker-0.0.3.tgz",
+  "readme": "ERROR: No README data found!"
 }

@@ -9,6 +9,7 @@ var Worker = function(){
 Worker.prototype.constructor = function(params){
 	this.action = params.step;
 	this.interval = params.interval || 0;
+	this.originalInterval = params.interval;
 	this.autoplay = params.autoPlay || false;
 	this.debug = params.debug || false;
 	this.parallel = params.parallel || Infinity;
@@ -23,13 +24,7 @@ Worker.prototype.constructor = function(params){
 			this.run();
 	}.bind(this))()
 
-	return {
-		run : this.run,
-		stop : this.stop,
-		timesRunned : function(){
-			return timesRunned
-		}
-	}
+	return this
 };
 
 Worker.prototype.argumentsToArray = function(){
@@ -49,6 +44,17 @@ Worker.prototype.log = function(){
 		array.reverse()
 		console.log.apply(this,array)
 	}
+};
+
+Worker.prototype.autoDelayDown = function(){
+	this.log('shutting autoDelay DOWN');
+	this.autoDelay = false;
+	this.interval = this.originalInterval;
+};
+
+Worker.prototype.autoDelayUp = function(){
+	this.log('shutting autoDelay UP');
+	this.autoDelay = true;
 };
 
 Worker.prototype.run = function() {
